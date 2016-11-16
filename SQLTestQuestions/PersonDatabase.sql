@@ -69,29 +69,29 @@ VALUES (5, 'Margot Steed ())', 'Female','1962-03-12', '62 South Peg Shop Street 
 --RISK DATA
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (1, 'Cigna',1.231, 'Low', getdate() - 3)
+VALUES (1, 'Cigna',1.231, 'Bronze', getdate() - 3)
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (1, 'Medicare',4.453, 'High', getdate() - 5)
+VALUES (1, 'Medicare',4.453, 'Gold', getdate() - 5)
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (1, 'Cigna', 2.568, 'Medium', getdate())
+VALUES (1, 'Cigna', 2.568, 'Silver', getdate())
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (1, 'Anthem', 3.945, 'Low', getdate())
+VALUES (1, 'Anthem', 3.945, 'Bronze', getdate())
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (2, 'Carefirst',12.51, 'Low', getdate() - 3)
+VALUES (2, 'Carefirst',12.51, 'Bronze', getdate() - 3)
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (2, 'Carefirst', 50.201, 'High', getdate())
+VALUES (2, 'Carefirst', 50.201, 'Gold', getdate())
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (4, 'Cigna', 1.231, 'Low', getdate())
+VALUES (4, 'Cigna', 1.231, 'Bronze', getdate())
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (4, 'Anthem', 4.63, 'Medium', getdate())
+VALUES (4, 'Anthem', 4.63, 'Silver', getdate())
 
 INSERT INTO DBO.Risk (PersonID, AttributedPayer, RiskScore, RiskLevel, RiskDateTime)
-VALUES (5, 'Medicare', .342, 'Low', getdate() - 3)
+VALUES (5, 'Medicare', .342, 'Bronze', getdate() - 3)
 
