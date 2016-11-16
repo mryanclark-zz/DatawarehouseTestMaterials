@@ -1,3 +1,5 @@
+USE PERSONDATABASE
+
 /*********************
 Hello! 
 
@@ -6,7 +8,31 @@ questions. All answers should be written using SQL.
 
 ***********************
 
+
+
 QUESTION 1
+
+The table dbo.Risk contains calculated risk scores for the population in dbo.Person. Write a 
+query or group of queries that return the patient name, and their most recent risk level(s). 
+Any patients that dont have a risk level should also be included in the results. 
+
+**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************
+
+QUESTION 2
+
 
 The table dbo.Person contains basic demographic information. The source system users 
 input nicknames as strings inside parenthesis. Write a query or group of queries to 
@@ -22,21 +48,6 @@ or be blank if no nickname exists.
 
 
 
-/**********************
-
-QUESTION 2
-
-The table dbo.Risk contains calculated risk scores for the population in dbo.Person. Write a 
-query or group of queries that return the patient name, and their most recent risk level(s). 
-Any patients that dont have a risk level should also be included in the results. 
-
-Bonus: Write a query that returns only one level per patient, so that High > Medium > Low
-
-**********************/
-
-
-
-
 
 
 
@@ -44,6 +55,24 @@ Bonus: Write a query that returns only one level per patient, so that High > Med
 /**********************
 
 QUESTION 3
+
+Building on the query in question 1, write a query that returns only one row per 
+patient for the most recent levels. Return a level for a patient so that for patients with 
+multiple levels Gold > Silver > Bronze
+
+
+**********************/
+
+ 
+
+
+
+
+
+
+/**********************
+
+QUESTION 4
 
 The following query returns patients older than 55 and their assigned risk level history. 
 
@@ -54,6 +83,7 @@ B. What changes would we need to make to run this query at any time to return pa
 Rewrite the query with any required changes in Answer B section below. 
 
 **********************/
+
 
 	SELECT *
 	FROM DBO.Person P
@@ -68,6 +98,7 @@ Rewrite the query with any required changes in Answer B section below.
 		)
 
 	AND P.ISACTIVE = '1'
+
 
 
 --------Answer A--------------------
@@ -89,16 +120,47 @@ Rewrite the query with any required changes in Answer B section below.
 
 
 
+
+
 /**********************
 
-QUESTION 4
+QUESTION 5
 
-Looking at the script 'PersonDatabase', what change(s) could be made to improve the database structure?  
+Create a function that accepts a first and last name and returns a PersonID from the Person table. If no 
+match is found, the function should return -1.
 
-What method(s) could we use to standardize the data allowed in dbo.Person (Sex) to only allow 'Male' or 'Female'?
-
-Assuming these tables will grow very large, what other database tools/objects could we use to ensure they remain
-efficient when queried?
 
 **********************/
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************
+
+QUESTION 6
+
+A. Looking at the script 'PersonDatabase', what change(s) to the tables could be made to improve the database structure?  
+
+B. What method(s) could we use to standardize the data allowed in dbo.Person (Sex) to only allow 'Male' or 'Female'?
+
+C. Assuming these tables will grow very large, what other database tools/objects could we use to ensure they remain
+efficient when queried?
+
+
+**********************/
+
+
+
+
+
+
+
 
